@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+
+:root {
+    --primary-color-light : hsl(158, 36%, 37%);
+    --primary-color-dark: hsl(158, 42%, 18%);
+    --color-black: hsl(212, 21%, 14%);
+    --color-grey: hsl(228, 12%, 48%);
+    --color-cream: hsl(30, 38%, 92%);
+    --color-white: hsl(0, 0%, 100%);
+    font-size: 14px;
+}
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--color-cream);
+    height: 100vh;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 1.2rem;
+    width: 60rem;
+    background-color: var(--color-white);
+    position: absolute;
+
+}
+
+.information {
+    padding: 1rem 5rem 1rem 5rem;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* pour que l'image s'adapte au contenant*/
+    border-top-left-radius: 1.2rem;
+    border-bottom-left-radius: 1.2rem;
+}
+
+.titles {
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+h1 {
+    font-family: "Fraunces";
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: "Montserrat";
+    color: var(--color-grey);
+    text-transform: uppercase ;
+    font-weight: 500;
+    letter-spacing: 0.4rem;
+}
+
+p {
+    color: var(--color-grey);
+    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+}
+
+.price {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.promotion-price {
+    color: var(--primary-color-light);    
+    font-size : 2.7rem;
+    font-weight: bold;
+    font-family: "Fraunces"; 
+}
+
+.old-price {
+    text-decoration: line-through;
+}
