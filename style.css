@@ -12,14 +12,19 @@
     font-size: 14px;
 }
 
-
 body {
-    font-family: "Montserrat", sans-serif;
     background-color: var(--color-cream);
-    height: 100vh;
 }
 
 main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    height: 100vh;
+}
+
+.card {
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-radius: 1.2rem;
@@ -31,9 +36,12 @@ main {
 
 .information {
     padding: 1rem 5rem 1rem 5rem;
+    display: flex;
+    flex-direction: column;
 }
 
-img {
+/* product image*/
+.perfume-image{
     display: block;
     width: 100%;
     height: 100%;
@@ -42,6 +50,7 @@ img {
     border-bottom-left-radius: 1.2rem;
 }
 
+/* product titles */
 .titles {
     display: flex;
     flex-direction: column-reverse;
@@ -60,6 +69,7 @@ h2 {
     font-weight: 500;
     letter-spacing: 0.4rem;
 }
+/*product description*/
 
 p {
     color: var(--color-grey);
@@ -69,10 +79,12 @@ p {
     line-height: 1.8rem;
 }
 
+/*product prices*/
 .price {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    margin: 1.3rem 0rem;
 }
 
 .promotion-price {
@@ -84,4 +96,39 @@ p {
 
 .old-price {
     text-decoration: line-through;
+}
+
+/*add to cart button*/
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 1rem;
+    background-color: var(--primary-color-light);
+    border: none;
+    border-radius: 1rem;
+    color: var(--color-white);
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.8rem;
+}
+
+button:hover {
+    background-color: var(--primary-color-dark);
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: var(--color-grey);
+    background-color: var(--color-cream);
+    font-family: "Montserrat";
+    letter-spacing: 0.1rem;
+    font-size: 0.8rem;
+}
+
+a {
+    color: var(--color-grey);
 }
